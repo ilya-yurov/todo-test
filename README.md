@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+<h1>Test Project for Mindbox</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p>This project serves as a todo list implementation created for Mindbox, demonstrating React application development with TypeScript, Vite, and Zustand.</p>
 
-Currently, two official plugins are available:
+<h2>Project Setup</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Prerequisites</h3>
+<p>Ensure you have Node.js version 18.18.0 installed on your machine. Manage Node.js versions with nvm. To use the correct Node.js version specified in the <code>.nvmrc</code> file, run:</p>
 
-## Expanding the ESLint configuration
+<pre><code>nvm use
+</code></pre>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h3>Installation</h3>
+<pre><code>npm install
+</code></pre>
 
-- Configure the top-level `parserOptions` property like this:
+<h2>Development</h2>
+<p>Run the development server with hot-reloading:</p>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+<pre><code>npm start
+</code></pre>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<h2>Production Build</h2>
+<p>Compile and minify for production:</p>
+
+<pre><code>npm build
+</code></pre>
+
+<h2>Running Tests</h2>
+<p>To run the tests, use the following command:</p>
+
+<pre><code>npm test
+</code></pre>
